@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabTidy</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">TabTidy</div>
+            <button id="btn-settings" class="icon-btn" title="Settings">⚙️</button>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search tabs...">
+        </div>
+
+        <div class="actions">
+            <button id="btn-focus-mode" class="primary-btn">Focus Mode</button>
+            <button id="btn-save-session" class="secondary-btn">Save Session</button>
+            <button id="btn-view-sessions" class="secondary-btn">Sessions</button>
+        </div>
+
+        <!-- Main Tab List -->
+        <div class="tabs-container" id="tabs-list">
+            <div class="empty-state">Loading tabs...</div>
+        </div>
+
+        <!-- Sessions List (Hidden by default) -->
+        <div class="tabs-container" id="sessions-list" style="display: none;">
+            <!-- Sessions will be injected here -->
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
